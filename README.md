@@ -1,24 +1,21 @@
 # GAP-AIM
-GAP-AIM (Governance Assessment & Prioritization – Addressability, Impact, Mitigation) is a quantitative AI governance and risk prioritization model inspired by the [Failure Mode and Effects Analysis (FMEA)](https://asq.org/quality-resources/fmea) method. It adapts the structured scoring logic of FMEA to AI governance, focusing on the practical assessment of ethical AI principles such as fairness, transparency, privacy, accountability, and security. GAP-AIM calculates a multiplicative score to rank AI risks based on how addressable they are by design, their potential impact, and the strength of mitigation measures in place. The model complements [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), [UNESCO AI Ethics Recommendation](https://unesdoc.unesco.org/ark:/48223/pf0000381137), [OECD AI Principles](https://oecd.ai/en/ai-principles), and [ISO/IEC 42001](https://www.iso.org/standard/81230.html) by providing organizations with a complementary, visual, and actionable way to prioritize AI risks and communicate risk posture to both technical and non-technical stakeholders through traffic-light-style visuals.
+GAP-AIM (Governance Assessment & Prioritization – Addressability, Impact, Mitigation) is a quantitative AI governance and risk prioritization model inspired by the [Failure Mode and Effects Analysis (FMEA)](https://asq.org/quality-resources/fmea) method. It adapts the structured scoring logic of FMEA to AI governance, focusing on the practical assessment of ethical AI principles such as fairness, transparency, privacy, accountability, and security. 
+
+GAP-AIM calculates a multiplicative score to rank AI risks based on how addressable they are by design, their potential impact, and the strength of mitigation measures in place. The model complements [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), [UNESCO AI Ethics Recommendation](https://unesdoc.unesco.org/ark:/48223/pf0000381137), [OECD AI Principles](https://oecd.ai/en/ai-principles), and [ISO/IEC 42001](https://www.iso.org/standard/81230.html) by providing organizations with a complementary, visual, and actionable way to prioritize AI risks and communicate risk posture to both technical and non-technical stakeholders through traffic-light-style visuals.
+
 GAP-AIM acts as a governance engine — providing structure to measure, prioritize and communicate ethical AI principles.
 It help organizations to:
+
 •	Identify potential risk senerios for each AI governance principle (e.g., accountability, bias, privacy, security, etc).
-•	Assess contextual risk senerio(s) via three dimensions:
-  o	Addressability — How feasible is it to resolve or reduce this risk through design, policy, or controls before production?
-  o	Impact — How severe would the consequences be if this risk is ignored?
-  o	Mitigation — How effective are the existing safeguards in reducing residual risk?
+
+•	Assess contextual risk senerio(s) via three dimensions - (Addressability, Impact and Mitigation)
+  
 •	Visualize results using a traffic-light scale (Red/Yellow/Green) to make risk posture instantly clear to both technical and non-technical stakeholders.
 
 ## Why GAP-AIM?
 While frameworks like NIST AI RMF,OECD, and ISO/IEC 42001, establish key principles and risk frameworks, they do not include a specific scoring system. GAP-AIM bridges this gap by introducing a **lightweight, quantitative model** inspired by **FMEA** and communicated through a **traffic light analogy** for clarity.
 
-By combining GAP-AIM scoring with governance frameworks (e.g., NIST AI RMF’s Govern, Map, Measure, Manage), organizations can:
-•	Prioritize AI risk mitigation in line with organizational values and regulatory requirements.
-•	Communicate AI risk maturity to executives, auditors, and regulators.
-•	Allocate resources based on highest combined risk & lowest addressability.
-•	Avoid “checkbox compliance” and focus on risks that truly matter in their context.
-
-## **Relationship to Existing Frameworks**
+### **Relationship to Existing Frameworks**
 
 NIST AI RMF
 : Provides categories for trustworthy AI but does not prescribe quantitative scoring. GAP-AIM operationalizes prioritization.
@@ -80,7 +77,7 @@ In a well-designed AI, model drift can occur. If this can be detected and mitiga
 If no monitoring in place; issues would be detected only after significant harm occurs.
 
 
-#**Scoring and Prioritization**
+**Scoring and Prioritization**
 Score  each dimension.
 GAP-AIM uses three multipliers (Addressability, Impact, Mitigation) → simple, scalable, easy to communicate.
 Scores  ranging from 1 to 3, is assigned for each dimension,
