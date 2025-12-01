@@ -1,7 +1,7 @@
 This file provides an explanation of how the FMEA Severity–Occurrence–Detection (SOD) framework was adapted into the GAP-AIM (Addressability–Impact–Mitigation) model.
 While FMEA is widely used in engineering and risk management, its direct application to AI risks comes with some limitations. AI risks are not always mechanical failures but socio-technical challenges that involve governance, ethics, and trust.
 
-To address this, we reframed the scoring pillars:
+To address this, I reframed the scoring pillars:
 Severity became Impact, asking what happens if a risk is ignored;
 Occurrence became Addressability, asking whether the risk can be prevented by design; 
 and 
@@ -15,11 +15,11 @@ By focusing on addressability, organizations can prioritize risks they can reali
 
 To better understand this:
 
-FMEA Occurence asks: “How often does bias occur in AI models?” → Hard to quantify.
+FMEA Occurence will asks: “How often does bias occur in AI models?” - Hard to quantify.
 
-GAP-AIM Addressability ask: “Can we mitigate bias at design time?” → Yes, via diverse datasets and fairness testing.
+GAP-AIM Addressability ask: “Can we mitigate bias at design time?” - May be  via diverse datasets and fairness testing.
 
-FMEA Occurence asks:“How often will hallucination happen?” → Cannot assign a useful probability.
+FMEA Occurence asks:“How often will hallucination happen?” - we cannot assign a useful probability.
 
 GAP-AIM Addressability ask:“Can we reduce hallucination risk before launch?” → Yes, with retrieval-augmented generation (RAG), fact-checking, and disclaimers.
 
