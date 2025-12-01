@@ -8,7 +8,7 @@ It help organizations to:
 
 •	Identify potential risk senerios for each AI governance principle (e.g., accountability, bias, privacy, security, etc).
 
-•	Assess contextual risk senerio(s) via three dimensions - (Addressability, Impact and Mitigation)
+•	Assess contextual risk senerio(s) via three **dimensions - (Addressability, Impact and Mitigation)**
   
 •	Visualize results using a traffic-light scale (Red/Yellow/Green) to make risk posture instantly clear to both technical and non-technical stakeholders.
 
@@ -24,23 +24,23 @@ UNESCO RAM
 : Emphasizes human rights and global equity; GAP-AIM translates these into addressable and measurable risks.
 
 OECD AI Principles
-: Defines values like robustness and accountability; GAP-AIM enables scoring of gaps in implementation.
+: Based on five core value-based pillars - inclusive growth, sustainable development, and well-being; human-centered values and fairness; transparency and explainability; robustness, security, and safety; and accountability. GAP-AIM enables scoring of gaps in implementation.
 
 ISO/IEC 42001
 : Establishes an AI management system standard; GAP-AIM complements it with practical scoring and visualization.
 
 ## The principles.
-OECD, NIST, ISO 42001, EU AI Act all aim to solve the same core risks to people and societal wellbeing (bias, opacity, safety, accountability, privacy) and therefore gravitate to similar principles rooted in human rights and rule‑of‑law traditions.
-OECD’s principles set a high-level baseline, while NIST’s AI RMF operationalizes them across the AI lifecycle. ISO 42001 standard translate them into auditable management and risk processes, while the EU AI Act makes these high‑level AI principles operational and enforceable within the E. U.S. executive orders (2025) supports the same principles to build trust and consistency.
+The OECD, NIST, ISO 42001, and EU AI Act all aim to solve the same core risks to people and societal wellbeing (bias, transparency, safety, accountability, privacy, etc) and therefore gravitate to similar principles rooted in human rights and rule‑of‑law.
+OECD’s principles set a high-level baseline, while NIST’s AI RMF operationalizes them across the AI lifecycle. ISO 42001 standard translate them into auditable management and risk processes, while the EU AI Act makes these high‑level AI principles operational and enforceable within the EU. The U.S. executive orders (2025) supports the same principles to build trust and consistency.
 For the purpose of this tool, the priciples have been grouped into five:
 
-**Privacy & data protection:** Collect only necessary data, secure it, and use it lawfully. Ensure consent/notice, retention limits, and data subject rights.
+**Privacy & Data Protection:** Collect only necessary data, secure it, and use it lawfully. Ensure consent/notice, retention limits, and data subject rights.
 
-**Accountability & oversight:** Name an owner for every AI system and decision and keep humans in the loop for consequential decisions. 
+**Accountability & Oversight:** Name an owner for every AI system and decision and keep humans in the loop for consequential decisions. 
 
-**Safety & security:** Design for predictable, resilient, cyber‑secure operation. Test for failures, adversarial inputs, model drift, and incident response. 
+**Safety & Security:** Design for predictable, resilient, cyber‑secure operation. Test for failures, adversarial inputs, model drift, and incident response. 
 
-**Transparency & explainability:** Disclose when AI is used, what data matters, and provide understandable reasons for outcomes. 
+**Transparency & Explainability:** Disclose when AI is used, what data matters, and provide understandable reasons for outcomes. 
 
 **Fairness & inclusion:** Detect and mitigate bias across data, models, and outcomes. Define fairness metrics, monitor disparities, and remediate harms. 
 
@@ -50,26 +50,26 @@ GAP-AIM
 
 1. **A — Addressability**  
 
-This dimension looks at how feasible it is to prevent or eliminate the risk before it occurs/ or deployed to production. Addressability emphasizes prevention over remediation. It assesses whether a risk can be addressed upstream through design choices, testing, and governance. It ranges from easy to hard. This maps to the occurence dimension of FMEA. 
+This dimension looks at how feasible it is to prevent or eliminate the risk before it occurs/ or before the AI is deployed to production. **Addressability emphasizes prevention over remediation**. It assesses whether a risk can be addressed upstream through design choices, testing, and governance. It ranges from easy to hard. This maps to the occurence dimension of FMEA. 
 
  - Easy: We can embed the solution upstream. E.g with better training data selection, choice of algorithm, etc.
- - Hard: No reliable way to address the risk in time.
+ - Hard: No reliable way to address the risk ahead of time.
 
-Example: A financial AI system risks discriminatory lending. By addressing it upstream — balancing datasets, applying fairness constraints, and auditing decisions — the organization demonstrates ethical responsibility and preserves trust before deployment.
+Example: Suppose a financial AI system has a risk of discriminatory lending. By addressing this risk upstream through the balancing of datasets, applying fairness constraints, or auditing decisions, the organization demonstrates ethical responsibility and preserves trust before deployment.
 
 2. **I — Impact**
 
-This  dimension asks the question - What is the harm if we ignore it?.  How minimal is the harm if we ignore it?. If the consequences are minimal to negligible, then the impact is low. It like measuring the consequence of inaction and  It forces stakeholders to confront the real-world harms that can occur if an AI risk is overlooked.
+This  dimension asks the question - **How minimal is the harm if we ignore it?** . If the consequences are minimal to negligible, then the impact is low. It is like measuring the consequences of inaction and  It forces stakeholders to confront the real-world harms that can occur if an AI risk is overlooked. This maps to the Severity function of FMEA.
 
-- Low:  If the risk occurs, and we ignore it, and its consequences are minimal to negligible.
-- High:  If the risk occurs and we ignore it, and the effect is severe
-Example: An AI diagnostic tool trained on unbalanced data misdiagnoses minority patients. If ignored, the harm includes patient injury, malpractice suits, and public distrust in AI-enabled healthcare..
+- Low:  We ignored the risk, but its consequences are minimal to negligible if it materialised.
+- High:  We ignore it, but its consequences is severe if it materialised.
+Example: An AI diagnostic tool trained on unbalanced data misdiagnoses minority patients. If risk is known ahead and ignored, the harm includes patient injury, malpractice suits, and public distrust in AI-enabled healthcare.
 
 3. **M — Mitigation**
 
-This is the dimension that looks at how effectively the risk senerio can be monitored, contained, or corrected once the AI is already running. It is our ability to detect, contain, and correct the issue after deployment, before it causes serious harm. It reflects how effectively harm can be detected, contained, and remediated in real time. This maps to the detect function of FMEA.
+This is the dimension that looks at how effectively the risk senerio can be **monitored, contained, or corrected** once the AI is already running. It is our ability to detect, contain, and correct the issue after deployment, before it causes serious harm. It reflects how effectively harm can be detected, contained, and remediated in real time. This maps to the detect function of FMEA.
 
- - Matured: There is vailability of monitoring tools, audit trails.
+ - Matured: There is availability of monitoring tools, audit trails, etc.
  - Immature: There is no or minimal control in place.
 
 Example:
@@ -77,52 +77,54 @@ In a well-designed AI, model drift can occur. If this can be detected and mitiga
 If no monitoring in place; issues would be detected only after significant harm occurs.
 
 
+**Calculate Risk Score**.
+Calculation is similar to FMEA’s Risk Priority Number (RPN). The AIM Risk score is calculated by multipling the assigned scores of each dimension. 
+This lets you rank risk senerios across all principles, not just security.
+
 **Scoring and Prioritization**
 Score  each dimension.
-GAP-AIM uses three multipliers (Addressability, Impact, Mitigation) → simple, scalable, easy to communicate.
-Scores  ranging from 1 to 3, is assigned for each dimension,
-Addressability → 3 (Easy) to 1 (Hard)
-Impact → 3 (Low) to 1 (High)
-Mitigation → 3 (Mature) to 1 (Immature)
+GAP-AIM uses three multipliers (Addressability, Impact, Mitigation).
+Scores  ranging from 1 to 3, is assigned for each dimension;
+Addressability → 3 (Easy) -  1 (Hard)
+Impact → 3 (Low) - 1 (High)
+Mitigation → 3 (Mature) - 1 (Immature)
 
-**Calculate Risk Score**.
-The Risk score ( AIM Score is calculated by multipling the assignned scores of each dimension) - Similar to FMEA’s Risk Priority Number (RPN), but using AIM scoring.
-This lets you rank risk senerios across all principles, not just security.
 
 **GAP AIM Scoring Methodology**
 
-The GAP AIM scoring model evaluates risks by assigning scores derived from a structured mathematical framework. The foundation of this approach is based on the principle of equivalence classes under multiplicative scoring, where multiple combinations of contributing factors may map to the same overall score.
+The GAP AIM scoring model evaluates risks by assigning scores derived from a structured mathematical framework. The foundation of this approach is based on the principle of [equivalence classes] (https://en.wikipedia.org/wiki/Equivalence_relation) under multiplicative scoring, where multiple combinations of contributing factors may map to the same overall score.
 
 To illustrate, consider three evaluation dimensions A,B,C, each with possible values {1,2,3}. The Cartesian product of these sets yields 3×3×3=27 possible combinations.
-However, many of these combinations produce the same outcome when multiplied. For example:
+The Cartesian product gives us all possible combinations, but our multiplicative scoring means many combinations may end up with the same final score.
 
 (3,1,1), (1,3,1), and (1,1,3) all yield a product of 3.
 
 (3,1,2), (2,3,1), and (2,1,3) all yield a product of 6.
 
-By grouping such results, we find only 10 unique outcome scores, (1,2,3 4 ,6,8,9,12,18,27) ranging from 1 through 27.
+
+By grouping such results, we find only 10 unique outcome scores, (1,2,3, 4 ,6,8,9,12,18,27) ranging from 1 through 27.
 
 This deduplication follows the logic of prime factorization and equivalence partitioning: while different inputs may look distinct, if their products are the same, they represent the same “AIM score” in our model. This gives us a condensed, meaningful scoring scale that avoids over-counting redundant combinations.
 
 **Risk Color Banding**
 
-To interpret these numeric scores, we apply color bands to communicate urgency and prioritization. The current bands are:
+To interpret these numeric scores, I apply color bands to communicate urgency and prioritization. The current bands are:
 
-* 🔴 **Red (High Concern)** (1–4): Represents the most critical risks. Scores in this range reflect conditions with  Significant impact with limited mitigations.. These scenarios require urgent attention.
+* 🔴 **Red (High Concern)** (1–4): Represents the most critical risks. Scores in this range reflect conditions with  significant impact with limited mitigations. These scenarios require urgent attention. This is a score of 1,2,3 or 4 from all posible multiplicative scores -(1,2,3, 4 ,6,8,9,12,18,27)
 
-* 🟡 **Yellow (Moderate Concern)** (5–17): Represents moderate risks. The spread reflects situations where risk factors compound but are still within a controllable threshold. These should be monitored and addressed according to organizational priorities.
+* 🟡 **Yellow (Moderate Concern)** (5–17): Represents moderate risks. The spread reflects situations where risk factors compound but are still within a controllable threshold. These should be monitored and addressed according to organizational priorities. This is a score of 6,8,9,or 12 from all posible multiplicative scores -(1,2,3, 4 ,6,8,9,12,18,27)
 
-* 🟢 **Green (Low Concern)** (18–27): Represents lower risks. Residual risk is understood and managed. Scores here reflect either high resilience or low combined impact from contributing factors.
+* 🟢 **Green (Low Concern)** (18–27): Represents lower risks. Residual risk is understood and managed. Scores here reflect either high resilience or low combined impact from contributing factors. This is a score of 18,27 from all posible multiplicative scores -(1,2,3, 4 ,6,8,9,12,18,27)
  
-Flexibility and Risk Appetite
+**Flexibility and Risk Appetite**
 
-It is important to note that these thresholds are not absolute. The chosen bands (1–4, 5–17, 18–27) are based on a balance of clarity and practicality but may be adjusted depending on the risk appetite of the organization. For instance, highly regulated industries may set a tighter boundary around “Red,” while more agile environments may tolerate higher variability in the “Yellow” range.
+It is important to note that these thresholds are not absolute. The chosen bands (1–4, 5–17, 18–27) should be based on a balance of clarity, practicality and may be adjusted depending on the risk appetite of the organization. For instance, highly regulated industries may set a tighter boundary around “Red,” while more agile environments may tolerate higher variability in the “Yellow” range.
 
-The flexibility of this scale ensures that the GAP AIM scoring model can be tailored to align with organizational strategy, regulatory requirements, and governance standards.
+The flexibility of this scale ensures that the GAP AIM scoring model can be tailored to align with organizational strategy, regulatory requirements, risk apeptite and  governance standards.
 
-#**Why GAP-AIM Uses a 1–3 Scoring Scale**
+#**Why GAP-AIM uses a 1–3 Scoring Scale**
 
-Many established risk assessment tools, such as FMEA, use a 1–10 scale to rate severity, occurrence, and detection. 
+Many established risk assessment tools, such as FMEA that was adapted, use a 1–10 scale to rate severity, occurrence, and detection. 
 While this offers fine-grained precision, it may introduce complexity, inconsistency, and “false accuracy” when used in cross-functional AI governance contexts.
 
 GAP-AIM is designed for executives, regulators, and multidisciplinary teams, where speed, clarity, and consensus are critical.
@@ -140,7 +142,6 @@ Theoretical underpinnings
 | **Weakest link principle**          | One poor score can disproportionately lower the total, aligning with real-world risk amplification.      |
 | **Human factors / decision theory** | Executives respond faster to 3-band categorizations than to granular numbers.                            |
 | **Signal detection theory**         | Color-coded bands increase detection and correct classification of priority levels under cognitive load. |
-
 
 
 ## Getting Started
@@ -172,7 +173,7 @@ Manage	Prioritizes remediation based on AIM scores and focuses resources on low 
 
 ## Disclaimer
 
-GAP-AIM is an **early-stage research model**. It is not a regulatory framework, certification, or compliance tool. It is designed to **complement existing AI governance frameworks** by making risk more **measurable and actionable**.
+GAP-AIM is an **early-stage conceptual model**. It is not a regulatory framework, certification, or compliance tool. It is designed to **complement existing AI governance frameworks** by making risk more **measurable and actionable**.
 
 ## Feedback
 Kindly send feedback to info@theffrentials.com .
