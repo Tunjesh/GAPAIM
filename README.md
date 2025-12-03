@@ -48,7 +48,7 @@ For the purpose of this tool, the priciples have been grouped into five:
 
 GAP-AIM 
 
-1. **A — Addressability**  
+1. **A - Addressability**  
 
 This dimension looks at how feasible it is to prevent or eliminate the risk before it occurs/ or before the AI is deployed to production. **Addressability emphasizes prevention over remediation**. It assesses whether a risk can be addressed upstream through design choices, testing, and governance. It ranges from easy to hard. This maps to the occurence dimension of FMEA. 
 
@@ -57,7 +57,7 @@ This dimension looks at how feasible it is to prevent or eliminate the risk befo
 
 Example: Suppose a financial AI system has a risk of discriminatory lending. By addressing this risk upstream through the balancing of datasets, applying fairness constraints, or auditing decisions, the organization demonstrates ethical responsibility and preserves trust before deployment.
 
-2. **I — Impact**
+2. **I - Impact**
 
 This  dimension asks the question - **How minimal is the harm if we ignore it?** . If the consequences are minimal to negligible, then the impact is low. It is like measuring the consequences of inaction and  It forces stakeholders to confront the real-world harms that can occur if an AI risk is overlooked. This maps to the Severity function of FMEA.
 
@@ -65,7 +65,7 @@ This  dimension asks the question - **How minimal is the harm if we ignore it?**
 - High:  We ignore it, but its consequences is severe if it materialised.
 Example: An AI diagnostic tool trained on unbalanced data misdiagnoses minority patients. If risk is known ahead and ignored, the harm includes patient injury, malpractice suits, and public distrust in AI-enabled healthcare.
 
-3. **M — Mitigation**
+3. **M - Mitigation**
 
 This is the dimension that looks at how effectively the risk senerio can be **monitored, contained, or corrected** once the AI is already running. It is our ability to detect, contain, and correct the issue after deployment, before it causes serious harm. It reflects how effectively harm can be detected, contained, and remediated in real time. This maps to the detect function of FMEA.
 
